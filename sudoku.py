@@ -21,8 +21,6 @@ def solve():
     for i in range(1,10):
         if valid(i, (row, col)):
             board[row][col] = i
-            print('\n')
-            display()
             if solve():
                 return True
 
@@ -82,3 +80,5 @@ def empty():
 
 display()
 solve()
+print('\n')
+display()
